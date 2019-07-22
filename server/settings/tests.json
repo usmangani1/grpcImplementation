@@ -1,0 +1,12 @@
+{
+  "PrivateKeyPath": "settings/keys/private_key",
+  "PublicKeyPath": "settings/keys/public_key.pub",
+  "JWTExpirationDelta": 24,
+  "UploadDir": "E:/temp/",
+  "mongo": {
+    "Url":"mongodb+srv://%s:%s@vuegomongo-9c3kf.gcp.mongodb.net/test?ssl=true&retryWrites=true",
+    "Password": "GoVue123",
+    "Username": "Daniely",
+    "Timeout": 10
+  }
+}

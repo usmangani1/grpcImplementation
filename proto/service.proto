@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package protocol;
+
+message Request {
+    string name  = 23;
+    string email = 10;
+}
+
+message Response {
+    string userId = 10;
+}
+
+service AddService {
+    rpc CreateUser (Request) returns (Response);
+    rpc FetchUser (Response) returns (Request);
+}

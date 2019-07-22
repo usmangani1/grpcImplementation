@@ -1,0 +1,22 @@
+{
+  "PrivateKeyPath": "/root/data/ft/private_key",
+  "PublicKeyPath": "/root/data/ft/public_key.pub",
+  "JWTExpirationDelta": 24,
+  "UploadDir": "",
+  "mongo": {
+    "Url":"mongodb+srv://%s:%s@vuegomongo-9c3kf.gcp.mongodb.net/api-server?ssl=true&retryWrites=true",
+    "Password": "GoVue123",
+    "Username": "Daniely",
+    "Timeout": 10
+  },
+  "permissions": [
+    {
+      "type": "role",
+      "name": "user",
+      "action": "any",
+      "urlRgx": "/api/v1/users/.+",
+      "effect": "allow",
+      "_comment": "type: role/user; name: role name or user email; action: any/get/post/put/delete;  url: regex url; effect: allow/deny;"
+    }
+  ]
+}
